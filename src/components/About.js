@@ -6,7 +6,7 @@ function About (){
     return (
         <div>
             <aside>
-                <img src={`${logo}`} alt="blog logo" />
+                <img src={[`${logo}`] ? [`${logo}`] : 'https://via.placeholder.com/215'} alt="blog logo"  />
                 <p>{blogData.about}</p>
         </aside>
         </div>
